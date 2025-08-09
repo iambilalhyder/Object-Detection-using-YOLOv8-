@@ -1,0 +1,12 @@
+Task 4 - Overview-
+Creating and training a custom object detection model using YOLOv8.
+The dataset I chose was from Roboflow - A dataset of Candy Images.
+The objects were categorized into 11 classes- Airheads, Milkyway, Snickers, Twizzlers, Skittles, MnM regular, MnM peanut, Nerds, gummy worms, 3 mushkeeters, starbust.
+I used Label Studio to annotate and label the images using boundary boxes.( I have also uploaded a video showcasing labelling being done)
+Exported the labeled dataset in YOLOv8 format from Label Studio.
+Divided the dataset into two subsets: 80 percent for training and 20 percent for validation.
+Created the required folder structure with separate directories for training and validation images and labels.
+Configured the data.yaml file with class names and paths to the training and validation sets.
+Initiated model training using the YOLOv8 model with 50 epochs and an image size of 640.
+Monitored training progress and validated the model's performance using evaluation metrics such as mAP and precision.
+My task was completed successfully after my model was able to predict and name each of the candy of the testing dataset.
