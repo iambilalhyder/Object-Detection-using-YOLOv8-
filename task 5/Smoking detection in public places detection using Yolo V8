@@ -1,0 +1,24 @@
+This is a project for detection of smoking from the given images. The codes are based on implementation of Yolo V8
+ The model generates bounding boxes for each instance of an object ( cigeratte) in the image.
+
+Dataset-
+The Dataset for this task was obtained from Kaggle, as this particular problem largely involves privacy matters and concerns. 
+While the goal was to obtain data from real world scenarios, the dataset provides representation close to that of actual samples, with the object of target, 
+a cigarette appearing at many different scales and sizes. Here's the datset link https://www.kaggle.com/datasets/sujaykapadnis/smoking.
+
+Labelling of these images was done using Label studio where i used bounding boxes to bound the area of cigratte and for training the model.
+I split the images in 80% training images and 20% validation images.
+Training parameters included:
+
+Epochs: set to the required number for convergence.
+
+Image size: resized to 640×640 pixels for input.
+
+Batch size: defined for efficient GPU usage.
+
+Results-
+The model successfully detected cigeratte regions with high accuracy.
+
+Generated graphs (training curves, confusion matrix, and precision-recall curves) demonstrated strong model performance.
+
+
